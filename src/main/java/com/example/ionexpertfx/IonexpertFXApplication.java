@@ -9,13 +9,13 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class IonexpertFXApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
         Font.loadFont(getClass().getResourceAsStream("/com/example/ionexpertfx/fonts/Poppins-Regular.ttf"), 10);
         Application.setUserAgentStylesheet(new PrimerLight().getUserAgentStylesheet());
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("sidebar.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(IonexpertFXApplication.class.getResource("sidebar.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 285, 1000);
         scene.getStylesheets().add(getClass().getResource("/com/example/ionexpertfx/css/main.css").toExternalForm());
         stage.setTitle("Hello!");
