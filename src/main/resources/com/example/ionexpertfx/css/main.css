@@ -1,0 +1,11 @@
+* {
+    -fx-font-family: 'Poppins';
+}
+
+.blue-fp-background {
+    -fx-background-color: #142434;
+}
+
+.text-white {
+    -fx-text-fill: white;
+}
