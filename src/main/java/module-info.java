@@ -11,7 +11,11 @@ module com.example.ionexpertfx {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
     requires atlantafx.base;
+    requires org.kordamp.ikonli.feather;
 
     opens com.example.ionexpertfx to javafx.fxml;
     exports com.example.ionexpertfx;
+
+    opens com.example.ionexpertfx.controller to javafx.fxml;
+    exports com.example.ionexpertfx.controller;
 }
