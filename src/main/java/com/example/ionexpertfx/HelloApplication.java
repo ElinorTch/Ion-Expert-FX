@@ -1,6 +1,5 @@
 package com.example.ionexpertfx;
 
-import atlantafx.base.theme.PrimerDark;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
