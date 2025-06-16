@@ -10,6 +10,7 @@ module com.example.ionexpertfx {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires atlantafx.base;
 
     opens com.example.ionexpertfx to javafx.fxml;
     exports com.example.ionexpertfx;
