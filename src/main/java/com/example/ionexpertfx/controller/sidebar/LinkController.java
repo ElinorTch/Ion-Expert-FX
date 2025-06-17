@@ -9,21 +9,23 @@ import org.kordamp.ikonli.feather.Feather;
 import org.kordamp.ikonli.javafx.FontIcon;
 import javafx.scene.paint.Color;
 
+import java.beans.JavaBean;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class SidebarLinkController extends VBox implements Initializable {
+public class LinkController extends VBox {
 
     @FXML
-    ListView<IconItem> sidebarLink;
+    ListView<IconItem> linkList = new ListView<>();
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        sidebarLink.getItems().addAll(new IconItem("HOME", "Accueil"),
-                new IconItem("FILE_TEXT", "Nouveau"),
-                new IconItem("FOLDER", "Ouvrir"));
+    public LinkController() {}
 
-        sidebarLink.setCellFactory(listView -> new ListCell<>() {
+    public LinkController(IconItem[] iconItems) {
+        for (IconItem item : iconItems) {
+            linkList.getItems().add(item);
+        }
+
+        linkList.setCellFactory(listView -> new ListCell<>() {
             @Override
             protected void updateItem(IconItem items, boolean empty) {
                 super.updateItem(items, empty);
