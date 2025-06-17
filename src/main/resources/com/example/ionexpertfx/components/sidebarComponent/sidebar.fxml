@@ -13,7 +13,6 @@
          <Image url="@../../assets/logoIonexpert.png"/>
       </ImageView>
       <fx:include source="sidebarLink.fxml" />
-<!--      <ListView prefHeight="160.0" prefWidth="192.0" styleClass="blue-fp-background"/>-->
    </VBox>
    <VBox alignment="CENTER" prefHeight="461.0" prefWidth="285.0" spacing="10.0">
       <ChoiceBox prefHeight="25.0" prefWidth="270.0"/>
