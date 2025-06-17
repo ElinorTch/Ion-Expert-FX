@@ -7,34 +7,36 @@ import javafx.scene.control.ListView;
 import javafx.scene.layout.VBox;
 import org.kordamp.ikonli.feather.Feather;
 import org.kordamp.ikonli.javafx.FontIcon;
+import javafx.scene.paint.Color;
 
 import java.net.URL;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
 import java.util.ResourceBundle;
 
 public class SidebarLinkController extends VBox implements Initializable {
 
     @FXML
-    ListView<Map<String, FontIcon>> sidebarLink;
+    ListView<IconItem> sidebarLink;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-//        sidebarLink.getItems().addAll();
-//
-//        sidebarLink.setCellFactory(listView -> new ListCell<>() {
-//            @Override
-//            protected void updateItem(String item, boolean empty) {
-//                super.updateItem(item, empty);
-//                if (empty || item == null) {
-//                    setText(null);
-//                } else {
-//                    FontIcon icon = new FontIcon(Feather.CHECK);
-//                    setGraphic(icon);
-//                    setText(item);
-//                }
-//            }
-//        });
+        sidebarLink.getItems().addAll(new IconItem("HOME", "Accueil"),
+                new IconItem("FILE_TEXT", "Nouveau"),
+                new IconItem("FOLDER", "Ouvrir"));
+
+        sidebarLink.setCellFactory(listView -> new ListCell<>() {
+            @Override
+            protected void updateItem(IconItem items, boolean empty) {
+                super.updateItem(items, empty);
+                if (empty || items == null) {
+                    setText(null);
+                } else {
+                    FontIcon icon = new FontIcon(Feather.valueOf(items.getIconPath()));
+                    icon.setIconColor(Color.ORANGE);
+                    icon.setIconSize(18);
+                    setGraphic(icon);
+                    setText(items.getTitle());
+                }
+            }
+        });
     }
 }
