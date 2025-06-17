@@ -19,4 +19,6 @@ module com.example.ionexpertfx {
 
     exports com.example.ionexpertfx.controller.sidebar;
     opens com.example.ionexpertfx.controller.sidebar to javafx.fxml;
+    exports com.example.ionexpertfx.controller.shared;
+    opens com.example.ionexpertfx.controller.shared to javafx.fxml;
 }

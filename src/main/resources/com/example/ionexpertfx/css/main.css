@@ -23,21 +23,22 @@
 }
 
 /* Sidebar Link Style*/
-#sidebarLink {
+#linkList {
     -fx-background-color: -bg-primary;
     -fx-border-color: transparent;
+    -fx-text-fill: -text-white;
 }
 
-#sidebarLink .list-cell {
+#linkList .list-cell {
     -fx-background-color: transparent;
     -fx-text-fill: -text-white;
 }
 
-#sidebarLink .list-cell:hover {
+#linkList .list-cell:hover {
     -fx-background-color: -bg-secondary;
 }
 
-#sidebarLink .list-cell:selected {
+#linkList .list-cell:selected {
     -fx-background-color: -bg-secondary;
     -fx-text-fill: -text-white;
 }
