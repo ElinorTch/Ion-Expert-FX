@@ -1,16 +1,16 @@
 package com.example.ionexpertfx.controller.sidebar;
 
 public class IconItem {
-    private String iconName;
+    private String iconPath;
     private String title;
 
     public IconItem(String iconPath, String label) {
-        this.iconName = iconPath;
+        this.iconPath = iconPath;
         this.title = label;
     }
 
     public String getIconPath() {
-        return iconName;
+        return iconPath;
     }
 
     public String getTitle() {
