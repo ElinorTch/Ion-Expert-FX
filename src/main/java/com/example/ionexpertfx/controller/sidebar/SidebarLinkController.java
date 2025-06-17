@@ -2,6 +2,7 @@ package com.example.ionexpertfx.controller.sidebar;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
 import javafx.scene.layout.VBox;
 
@@ -16,5 +17,18 @@ public class SidebarLinkController extends VBox implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         sidebarLink.getItems().addAll("Analyse", "Nouveau", "Ouvrir");
+
+//        sidebarLink.setCellFactory(listView -> new ListCell<>() {
+//            @Override
+//            protected void updateItem(String item, boolean empty) {
+//                super.updateItem(item, empty);
+//                if (empty || item == null) {
+//                    setText(null);
+//                    setHover(false);
+//                } else {
+//                    setText(item);
+//                }
+//            }
+//        });
     }
 }
