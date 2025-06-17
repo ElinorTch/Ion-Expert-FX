@@ -1,5 +1,7 @@
 package com.example.ionexpertfx.controller.sidebar;
 
+import com.example.ionexpertfx.controller.shared.ComboboxController;
+import com.example.ionexpertfx.controller.shared.LinkController;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.VBox;

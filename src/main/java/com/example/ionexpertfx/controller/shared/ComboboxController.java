@@ -1,12 +1,9 @@
-package com.example.ionexpertfx.controller.sidebar;
+package com.example.ionexpertfx.controller.shared;
 
+import com.example.ionexpertfx.controller.sidebar.IconItem;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
 import javafx.scene.layout.VBox;
-
-import java.net.URL;
-import java.util.ResourceBundle;
 
 public class ComboboxController extends VBox {
     @FXML
