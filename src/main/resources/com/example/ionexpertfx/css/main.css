@@ -1,11 +1,43 @@
+/* Main CSS File for IonExpertFX */
+.root {
+    -bg-primary: #142434;
+    -bg-secondary: #1f3a4a;
+    -bg-danger: #A93227;
+
+    -text-white: white;
+
+    -font-size: 14px;
+}
+
+/* General Styles */
 * {
     -fx-font-family: 'Poppins';
 }
 
 .blue-fp-background {
-    -fx-background-color: #142434;
+    -fx-background-color: -bg-primary;
 }
 
 .text-white {
     -fx-text-fill: white;
+}
+
+/* Sidebar Link Style*/
+#sidebarLink {
+    -fx-background-color: -bg-primary;
+    -fx-border-color: transparent;
+}
+
+#sidebarLink .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: -text-white;
+}
+
+#sidebarLink .list-cell:hover {
+    -fx-background-color: -bg-secondary;
+}
+
+#sidebarLink .list-cell:selected {
+    -fx-background-color: -bg-secondary;
+    -fx-text-fill: -text-white;
 }

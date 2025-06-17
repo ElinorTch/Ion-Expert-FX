@@ -12,10 +12,11 @@ module com.example.ionexpertfx {
     requires com.almasb.fxgl.all;
     requires atlantafx.base;
     requires org.kordamp.ikonli.feather;
+    requires java.desktop;
 
     opens com.example.ionexpertfx to javafx.fxml;
     exports com.example.ionexpertfx;
 
-    opens com.example.ionexpertfx.controller to javafx.fxml;
-    exports com.example.ionexpertfx.controller;
+    exports com.example.ionexpertfx.controller.sidebar;
+    opens com.example.ionexpertfx.controller.sidebar to javafx.fxml;
 }
